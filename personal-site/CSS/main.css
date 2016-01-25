@@ -1,0 +1,38 @@
+body {
+	background: url("../images/background.gif") no-repeat center center fixed;
+	background-size: cover;
+	border-width: 10px;
+	border-style: solid;
+}
+
+h1 {
+	border-width: 20px;
+}
+
+h1>img {
+	border-width: 5px;
+	width: 100%
+}
+
+h1~img {
+	max-width: 300px
+}
+
+article>img{
+	max-width: 300px;
+}
+
+ul.share {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.share>li {
+	display: inline;
+}
+
+ul.share>li>a>img {
+	max-width: 170px;
+	max-height: 27px;
+}
