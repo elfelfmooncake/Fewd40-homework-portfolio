@@ -1,0 +1,28 @@
+header{
+	background-color:red;
+}
+section{
+	background-color:blue;
+	float: left;
+	width: 60%
+}
+aside{
+	background-color:green;
+	float: right;
+	width: 40%
+}
+footer{
+	background-color:yellow;
+	clear:both;
+}
+
+.filler{
+	background-color: white;
+	opacity: .8;
+	margin: 10px;
+	padding: 10px;
+}
+
+.content{
+	height: 500px;
+}

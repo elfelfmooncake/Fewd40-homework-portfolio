@@ -52,20 +52,118 @@ body {
      line-height: 1.4;
      margin:0;
      font-family: Open Sans, Helvetica, Arial, sans-serif;
-     background: url(images/header_bg.jpg) no-repeat center top rgb(134,141,157);
-      background-width: 100%
 }
 
 .top-image {
-  text-indent: 2rem
-  color: ;
+  background-image: url(images/header_bg.jpg);
+  background-size: cover;
+}
+
+.top-image h1{
+  margin:0 0 0 0;
+  padding: 20px;
+  font-weight: 800;
+  color:white;
+  font-size: 24px;
+}
+
+.top-image h2 {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-weight: 600;
+  color: white;
+  font-size: 24px;
+}
+
+.button{
+  text-align: center;
+}
+.top-image span{
+  border-radius: 5px;
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-weight: 800;
+  background-color:#f9e42e;
+  font-size: 20px;
 }
 
 .benefits {
-  background-color: #f0efef;
-  text-indent: 2rem;
+  background-color: #f0efef;  
 }
 
+.benefits h1{
+  font-weight:600;
+  font-color:#033048 ;
+  margin-left: 4rem;
+}
+
+.benefits p{
+  font-weight:300;
+  font-color:#606161;
+  margin-left: 4rem;
+}
+
+.benefits ul{
+  margin-left: 4rem;
+  font-weight:300;
+  font-color:#606161;
+}
+
+.quote{
+  background-image: url(images/testimonial_bg.jpg);
+  background-size: cover;
+  text-align:center;
+}
+
+.quote p{
+  font-weight: 300;
+  font-style: italic;
+  color: white;
+  font-size:18px;
+  margin-left: 21rem;
+  margin-right: 21rem;
+}
+
+.quote span{
+  font-weight: 600;
+  color: white;
+  font-size:18px;
+  font-style:normal;
+}
+
+.sign-up{
+  background-color:#f9e42e;
+  text-align: center;
+  
+}
+
+.sign-up-button{
+  height:30px;
+  margin-top:30px;
+  }
+
+.sign-up-button span{
+  text-align: center;
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 5px;
+  background-color:#033048;
+  font-weight:800;
+  font-size: 12px;
+  border-radius: 5px;
+  color: white;
+}
+
+footer{
+  font-size:9px;
+  font-weight:300;
+  text-align:center;
+}
 
 /******************************************
 /* LAYOUT
@@ -74,26 +172,61 @@ body {
 /* Center the container */
 .top-image {
   width: 100%;
-  margin: auto;
-  height: 500px;
+  margin: 0;
+  height: 1000px;
 
 }
 
 .benefits {
-  width:120%;
+  width:100%;
   margin: 0,0;
-  height: 500px;
+  height: 250px;
   float: left;
-
-}
-header {
-
 }
 
-footer {
-
+.quote {
+  width:100%;
+  margin: 0;
+  height: 150px;
+  float: left;
 }
 
+.sign-up{
+  width:100%;
+  margin:0;
+  height:80px;
+  float:left;
+}
+
+.footer {
+  background-color:black;
+  font-size:9px;
+  font-weight:600;
+  height:150px;
+  text-align:center;
+  clear:both;
+  color:white;
+  padding-top:20px;
+}
+
+.footer h1{
+  font-size:24px;
+  text-align: center;
+  font-weight:800;
+  color:#f9e42e;
+}
+
+.footer-img1{
+  width:20px;
+}
+
+.footer-img2{
+  width:8px;
+  margin-left: 15px;
+}
+.footer p{
+  margin-top:20px;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
