@@ -1,4 +1,4 @@
-/*
+
 Project Name: Blank Template
 Client: Your Client
 Author: Your Name
@@ -75,6 +75,163 @@ header a{
   color:#f9e42e;;
 }
 
+/*left column styling*/
+.left_big{
+  width:700px;
+  float:left;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.left_big h1{
+  font-size:40px;
+  font-weight:600;
+  color: #033048;
+  font-family:Open Sans;
+  margin-bottom: 10px
+}
+
+hr{
+  clear:both;
+}
+
+
+
+/*the drop cap*/
+.L{
+  float:left;
+  width:0.7em;
+  font-size:300%;
+  line-height:70%;
+  color:#606161;
+}
+
+/*regular paragraph for drop cap*/
+.regular_p{
+  float:left;
+  font-size:24px;
+  font-weight:300;
+  color: #606161;
+  opacity:0.5;
+  }
+
+/*read more section*/
+.readmore{
+  font-size: 24px;
+  font-weight:600;
+  float:right;
+  line-height: 30px;
+  margin-bottom: 15px;
+  color: #033048
+}
+
+/*right column styling*/
+.right_big{
+  width:240px;
+  float:left;
+  margin-top: 25px;
+  color:#033048;
+}
+
+.right_big h1{
+  font-size:32px;
+  font-weight:800;
+  margin-bottom: 10px
+}
+
+.right_big li{
+  font-size:24px;
+  font-weight:300;
+}
+
+.normal{
+  font-style: 22px;
+  font-weight:300;
+}
+
+.learnmore{
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.link:hover{
+  background-color: yellow;
+}
+
+
+/*Sign up button and footer styles copied from Landing Page*/
+
+.sign-up{
+  background-color:#f9e42e;
+  text-align: center;
+  
+}
+
+.sign-up-button{
+  height:30px;
+  margin-top:30px;
+  }
+
+.sign-up-button span{
+  text-align: center;
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 5px;
+  background-color:#033048;
+  font-weight:800;
+  font-size: 12px;
+  border-radius: 5px;
+  color: white;
+}
+
+footer{
+  font-size:9px;
+  font-weight:300;
+  text-align:center;
+}
+
+
+.sign-up{
+  width:100%;
+  margin:0;
+  height:80px;
+  float:left;
+}
+
+.footer {
+  background-color:black;
+  font-size:9px;
+  font-weight:600;
+  height:150px;
+  text-align:center;
+  clear:both;
+  color:white;
+  padding-top:20px;
+}
+
+.footer h1{
+  font-size:24px;
+  text-align: center;
+  font-weight:800;
+  color:#f9e42e;
+}
+
+.footer-img1{
+  width:20px;
+}
+
+.footer-img2{
+  width:8px;
+  margin-left: 15px;
+}
+.footer p{
+  margin-top:20px;
+}
 /******************************************
 /* ADDITIONAL STYLES
-/*******************************************/
+/******************************************
