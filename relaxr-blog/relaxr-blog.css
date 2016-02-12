@@ -94,6 +94,7 @@ header a{
 
 hr{
   clear:both;
+  border-color:#033048;
 }
 
 
@@ -159,6 +160,10 @@ hr{
 
 .link:hover{
   background-color: yellow;
+}
+
+#sign-up:hover{
+  cursor: pointer;
 }
 
 
