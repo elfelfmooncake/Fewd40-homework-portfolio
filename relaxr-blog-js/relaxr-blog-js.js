@@ -13,9 +13,9 @@ $('.readmore a').click(function(){
 
 $('.readless').click(function(){
 	event.preventDefault();	
-	$('#show-this-on-click').slideUp()
-	$('.readless').hide()
-	$('.readmore').delay(500).show();
+	$('#show-this-on-click').slideUp();
+	$('.readmore').toggle();
+	$('.readless').hide();
 	// why does the delay not work here? How to make readmore show after paragraph slide up?
 })
 
