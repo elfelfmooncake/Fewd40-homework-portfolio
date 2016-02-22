@@ -38,7 +38,7 @@ $(".close-btn").click(function(){
 
 
 // how to make the "return" key work for clicking the close button?
-// $("body").bind('keyup', function(e) {
-// 	var code = e.keyCode || e.which;
-// 	if(code == 13) {$(".no_city").hide();}
-// })
+$("body").bind('keyup', function(e) {
+	var code = e.keyCode || e.which;
+	if(code == 27) $(".no_city").hide(); //27 = esc key
+})
