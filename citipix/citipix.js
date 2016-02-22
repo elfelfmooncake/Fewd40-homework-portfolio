@@ -4,9 +4,10 @@ $(document).ready(function() {
 
 $("#submit-btn").click(function(){
 	event.preventDefault();
+	$('body').removeClass();
 	var city = $("#city-type").val();
 	console.log(city);
-	if(city==="nyc" || city==="new york" || city==="new york city"){ 
+	if(city==="nyc" || city==="new york" || city==="new york city" || city==="ny"){ 
 		$('body').addClass('nyc')
 	}
 
@@ -37,7 +38,7 @@ $(".close-btn").click(function(){
 
 
 // how to make the "return" key work for clicking the close button?
-$(".close-btn").bind('click', function(e) {
-	var code = e.keyCode || e.which;
-	if(code == 13) {$(".no_city").hide();}
-})
+// $("body").bind('keyup', function(e) {
+// 	var code = e.keyCode || e.which;
+// 	if(code == 13) {$(".no_city").hide();}
+// })
