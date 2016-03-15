@@ -1,0 +1,1444 @@
+<!-- borrowing code from example first and then modifying elements -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Elva Fan's blog about growth</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a blog is meant to be a resource for entrepreneurs, product managers, marketers and anyone who's interested in leading the growth of a business.">
+    <meta name="author" content="Elva Fan">
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-FRAME-OPTIONS" content="SAMEORIGIN">
+    
+    <!-- telling search engine robots to index the page and follow all the links on the page -->
+    <meta name="robots" content="index,follow">
+    
+    <!-- <link rel="canonical" href="https://www.helpscout.net/blog/"> -->
+    <!-- Page is not hosted anywhere yet, the rel=canonical tag wouldn't work for SEO anyway -->
+
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/756612/652864/css/fonts.css">
+    
+    <link href="css/launch.css" rel="stylesheet">
+    
+    
+    
+    <link href="css/blog.css" rel="stylesheet">
+    
+    
+	<!-- I haven't integrated the page with google analytics yet -->
+	<!-- <script src="js/google-analytics.min.js"></script> -->
+    
+    <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+   
+
+   <!-- loading jquery from google and the javascript file -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/app.min.js"></script>
+    
+  
+    <script src="//platform.twitter.com/oct.js"></script>
+  </head>
+  
+  <body>
+    <section id="bodyWrap" >
+  
+  
+      <section id="content-header" >
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="hs-logo rainbow">
+                  <a href="/" title="Help Scout"><svg aria-labeledby="helpscout-logo-title-1 helpscout-logo-desc-1" class="logo-svg" role="img" viewBox="0 0 229.4 42.9" xmlns="http://www.w3.org/2000/svg"><title id="helpscout-logo-title-1">Help Scout logo</title><desc id="helpscout-logo-desc-1">Help Desk software - Customer Support Software</desc><polygon fill="#FFFFFF" points="68.4,16.1 63.3,16.1 63.3,4.5 56.5,4.5 56.5,33.6 63.3,33.6 63.3,21.2 68.4,21.2 68.4,33.6 
+          75.1,33.6 75.1,4.5 68.4,4.5   "/>
+          <path fill="#FFFFFF" d="M87.1,10.5c-6.2,0-9.2,2.7-9.2,8.7v6.5c0,5.5,3.1,8.4,8.9,8.4c4.9,0,8.4-2.3,8.4-7.3v-0.5h-6.5v0.5
+          c0,2.2-0.7,2.8-2.2,2.8c-1.4,0-2.2-0.9-2.2-2.5v-3.5h10.9v-5.4C95.3,13.1,92.1,10.5,87.1,10.5z M89,19.7h-4.5V17
+          c0-1.5,0.8-2.4,2.3-2.4c1.4,0,2.2,0.9,2.2,2.4V19.7z"/>
+          <rect x="98.2" y="2.8" fill="#FFFFFF" width="6.4" height="30.8"/>
+          <path fill="#FFFFFF" d="M119.1,10.5c-2,0-3.9,0.9-5.5,2.5l-0.2-2h-6.1v32h6.4V31.6c1.6,1.8,3.1,2.6,5.1,2.6c3.9,0,5.9-2.7,5.9-7.9
+          V18C124.9,13.2,122.8,10.5,119.1,10.5z M118.5,27c0,1.9-0.7,2.8-2.2,2.8c-0.8,0-1.8-0.5-2.5-1.4V16.2c0.9-0.9,1.6-1.4,2.6-1.4
+          c1.4,0,2.1,1,2.1,2.9V27z"/>
+          <path fill="#FFFFFF" d="M140.9,11.1c0-1.5,0.7-2.4,2.4-2.4c1.7,0,2.4,1,2.4,3.3v0.8h6.3v-0.7c0-4.8-2.7-8.1-8.3-8.1
+          c-6.1,0-9.2,2.7-9.2,7.4c0,8.5,11.3,9.9,11.3,15.3c0,1.7-0.6,2.6-2.5,2.6c-2,0-2.7-1.2-2.7-3.9v-0.8H134v1.3c0,5.1,3.3,8.1,9,8.1
+          c6.7,0,9.5-2.6,9.5-7.5C152.5,17.8,140.9,15.3,140.9,11.1z"/>
+          <path fill="#FFFFFF" d="M165.9,26.8c0,1.9-0.6,2.6-2,2.6c-1.6,0-2.1-0.8-2.1-2.8v-8.8c0-1.7,0.7-2.7,2-2.7c1.5,0,2,1,2,2.7v1.3h6.2
+          v-1.9c0-4.1-3-6.7-8.1-6.7c-5.3,0-8.6,2.8-8.6,7.2v9.1c0,4.8,3.1,7.3,8.7,7.3c5.6,0,8.2-2.4,8.2-7v-1.3h-6.4V26.8z"/>
+          <path fill="#FFFFFF" d="M183.6,10.5c-4.9,0-8.9,2.4-8.9,7.7V26c0,5.7,3.3,8.1,8.7,8.1c5.4,0,8.8-2.3,8.8-8.1v-7.8
+          C192.3,12.7,188.7,10.5,183.6,10.5z M185.9,26.7c0,1.6-0.7,2.7-2.4,2.7c-1.7,0-2.4-1-2.4-2.7v-8.8c0-1.6,0.7-2.7,2.4-2.7
+          c1.7,0,2.4,1.1,2.4,2.7V26.7z"/>
+          <path fill="#FFFFFF" d="M205.8,28.2c-0.7,0.7-1.6,1.3-2.6,1.3c-1.4,0-1.8-1-1.8-2.1V10.9h-6.4v16.3c0,3.8,1.2,6.8,5.4,6.8
+          c2.2,0,4.1-1,5.6-2.5l0.2,2h5.8V10.9h-6.4V28.2z"/>
+          <path fill="#FFFFFF" d="M229.3,28.7c-0.7,0.2-1.4,0.3-2.2,0.3c-1.9,0-2.7-1.1-2.7-2.9V15.4h4.8v-4.5h-4.8V4.5l-6.4,0.9v5.4h-2.8
+          v4.5h2.8v10.9c0,5.2,2.2,7.7,7.5,7.7c1.3,0,2.6-0.2,3.8-0.5L229.3,28.7z"/>
+          <path fill="#FFFFFF" class="hs-mark" d="M39.2,26.2c0,0-0.7,0.8-1.6,1.7c2-2.5,3-5,3.5-7.4c1,0,4.2-0.2,4.2-4.2c0,0-0.3-4.2,0.2-4.8
+          c0,0-3.7,0.4-4.2,6.6c0-2.3-0.5-4.4-1.3-6.4c0.8-0.4,3.8-2.1,1.3-6.3c0,0-0.7-1.1-0.6-2c0,0-3.1,1.9-2.1,4.9c0,0,0.4,0.8,0.9,2.1
+          c-1.1-2.1-2.4-3.9-3.7-5.4c0-0.8-0.6-6.4-8.5-5c0,0,1.2,6.4,8.2,5.2c1.2,1.5,2.3,3.2,3.2,5.2c-1.2-1.9-3.6-4.7-7.1-2.5
+          c0,0,1.1,0.7,2.1,3c0,0,1,2.6,5.6,1.1c0.7,2,1.1,4.1,0.9,6.4c-0.2-1.3-1.3-5.5-5.8-3.8c0,0,0.7,1,1,2.8c0,0,0.9,3,4.5,2.8
+          c-0.5,2.1-1.4,4.4-3.1,6.6c0.7-1.8,1.3-5.3-2.9-6.6c0,0,0.3,1.1-0.5,2.4c0,0-1.9,3.1,1.6,6.3c-1.3,1.4-3,2.9-4.9,4.3
+          c1-1.3,1.9-3.7,0.3-7.1c0,0,0.1,0.9-1.4,1.4c0,0-4.8,1.5-1.8,7.7c-0.9,0.5-2.2,1.2-4.1,2c-1.9-0.7-3.2-1.4-4.1-2
+          c3-6.2-1.8-7.7-1.8-7.7c-1.5-0.5-1.4-1.4-1.4-1.4c-1.6,3.4-0.7,5.8,0.3,7.1c-2-1.4-3.6-2.9-4.9-4.3c3.4-3.2,1.6-6.3,1.6-6.3
+          c-0.8-1.3-0.5-2.4-0.5-2.4c-4.2,1.4-3.6,4.8-2.9,6.6c-1.7-2.3-2.7-4.5-3.1-6.6c3.6,0.1,4.5-2.8,4.5-2.8c0.3-1.8,1-2.8,1-2.8
+          c-4.5-1.7-5.6,2.5-5.8,3.8c-0.2-2.3,0.2-4.4,0.9-6.4c4.6,1.5,5.6-1.1,5.6-1.1c1.1-2.3,2.1-3,2.1-3c-3.5-2.2-5.9,0.6-7.1,2.5
+          c0.9-2,2.1-3.7,3.2-5.2c7,1.3,8.2-5.2,8.2-5.2c-7.8-1.4-8.4,4.1-8.5,5c-1.3,1.5-2.7,3.3-3.7,5.4c0.4-1.3,0.8-2.1,0.8-2.1
+          c1-3-2.1-4.9-2.1-4.9c0.1,0.9-0.6,2-0.6,2c-2.5,4.2,0.5,5.9,1.3,6.3c-0.8,1.9-1.3,4.1-1.3,6.3c-0.6-6.2-4.2-6.6-4.2-6.6
+          c0.5,0.6,0.2,4.8,0.2,4.8c0.1,4,3.2,4.2,4.2,4.2c0.4,2.4,1.5,4.8,3.5,7.4c-0.9-0.9-1.6-1.7-1.6-1.7c-3-3.6-6.7-3.6-6.7-3.6
+          c0.5,0.9,0.8,2.7,0.8,2.7c0.6,3,2.6,4.4,2.6,4.4c2.2,1.9,5.7,0.4,6.5,0c1.4,1.5,3.2,3,5.3,4.6C14,33.7,11,32,9.4,32.8
+          c-0.1,0-2.2,1-5,0.2c0,0,4.3,6.9,13.5,3.5c1,0.6,2.1,1.1,3.2,1.6c-2.2,0.7-5,1.4-8.5,2l1.2,0.8c1.7-0.3,5.5-0.9,9.1-2.1
+          c3.7,1.2,7.4,1.8,9.1,2.1l1.2-0.8c-3.5-0.6-6.3-1.3-8.5-2c1.1-0.4,2.2-1,3.2-1.6C37.2,40,41.5,33,41.5,33c-2.8,0.8-4.9-0.2-5-0.2
+          c-1.6-0.8-4.6,0.8-5.8,1.5c2.1-1.5,3.9-3.1,5.3-4.6c0.9,0.4,4.3,1.9,6.5,0c0,0,1.9-1.5,2.6-4.4c0,0,0.3-1.8,0.8-2.7
+          C45.9,22.6,42.2,22.6,39.2,26.2z"/>
+      </svg></a>
+                </div><!--/mark-->
+            </div>
+            <div class="col-sm-9">
+              <ul class="nav nav-pills">
+                <li class="active"><a href="/blog/"><span class="hs">Help Scout</span> Blog</a></li>
+                <li><a href="/resources/">Resources</a></li>
+                <li id="nl-subscribe"><a href="#sub-form" data-toggle="modal">Subscribe</a></li>
+                <!-- blog-search -->
+                
+                <li class="bl-search">
+                  <form action="/blog-search/" id="cse-search-box">
+                    <div>
+                      <input type="hidden" name="" value="">
+                      <input class="bl-search-input " onkeyup="buttonUp();" placeholder="Search..." onblur="monkey();" type="text" value="" name="q" id="search">
+                      <input class="bl-search-submit" type="submit"  value="Search">
+                      <span class="bl-icon-search"><i class="icon-search"></i></span>
+                    </div>
+                  </form>
+                </li>
+                
+                <!-- /blog-search -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section><!-- /content-header -->
+      <div class="modal fade" id="sub-form" tabindex="-1" role="dialog" aria-labelledby="sub-formLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Newsletter Sign Up</h4>
+            </div><!-- /modal-header -->
+            <div class="modal-body">
+              <p>Join <strong>57,284 subscribers</strong> &amp; get great research like this twice a week.</p>
+              <form id="lead-signup-header" class="js-newsletter" action="https://secure.helpscout.net/newsletter/subscribe/" method="get" role="form">
+                <div class="form-group">
+                  <label for="fieldEmail" class="sr-only">Email address</label>
+                  <input id="fieldEmail" class="form-control" type="email" autocapitalize="off" autocorrect="off" name="email" placeholder="Email address" required>
+                  <input type="hidden" name="redirect" value="https://www.helpscout.net/newsletter/thanks/">
+                  <input type="hidden" name="form" value="Nav Modal">
+                  <input type="hidden" name="page" value="Customer Loyalty Blog - Help Scout">
+                  <input type="hidden" name="referrer" value="">
+                  <button class="btn btn-primary" data-loading-text="Sending..." type="submit">Subscribe</button>
+                </div><!-- /form-group -->
+              </form>
+              <span class="help-block">No sales pitches, no games, and one-click unsubscribe.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        // blog search
+        (function() {
+          var cx = '011616146584456223436:lfu7rkuvugk';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+              '//www.google.com/cse/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+        // conversion tracking
+        $('#lead-signup-header').on('submit', function(){
+          var val = $(this).find('#fieldEmail').val();
+          mixpanel.identify(val);
+          mixpanel.people.set({ 
+            "Type": "Lead",
+            "$email": val
+          });
+        });
+      </script>
+      		
+        
+        <!--for post image + bg hex-->
+        <section class="blog-featured" style="background: #6bdaed url(/images/blog/2016/mar/books-that-changed-us.png) no-repeat center bottom;  background-size: 562px 315px; ">
+          <a href="/blog/books-that-changed-us/" class="link feature-link" title="Read this post">
+            <div class="container-fluid">
+              <div class="feature-contents">
+                <div class="row">
+                  <div class="col-sm-10 col-sm-offset-1">
+                    <span class="feature-title">Featured Article</span>
+                    <h2><span>9 Great Books That Changed the Way We Work</span></h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </section><!-- /featured -->
+        
+
+      <section id="post-nav">
+        <div class="container-fluid">
+          <ul id="post-tabs" class="nav nav-tabs">
+            <li class="active"><a href="#most-recent" data-toggle="tab">Most Recent</a></li>
+            <li><a href="#popular" data-toggle="tab">Popular</a></li>
+            <li><a href="#growth" data-toggle="tab">Growth</a></li>
+            <li><a href="#support" data-toggle="tab">Support</a></li>
+            <li><a href="#culture" data-toggle="tab">Culture</a></li>
+            <li><a href="#product" data-toggle="tab">Product</a></li>
+            <li><a href="#customers" data-toggle="tab">Our Customers</a></li>
+          </ul><!--/post-tabs-->
+        </div>
+      </section><!--/post-nav-->
+
+      <div class="container-fluid">
+        <div class="row">
+        <div id="post-list" class="tab-content">
+          <div class="tab-pane fade in active" id="most-recent">
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/books-that-changed-us/" class="post-box">
+                
+                  <figure style="background: #6bdaed"><img src="/images/blog/2016/mar/books-that-changed-us.png" alt="9 Great Books That Changed the Way We Work"></figure>
+                
+                <p><span class="category"><em>growth</em></span><br>9 Great Books That Changed the Way We Work</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/isolated-teammates/" class="post-box">
+                
+                  <figure style="background: #ae85fd"><img src="/images/blog/2016/mar/isolated-teammates.png" alt="7 Ways to Engage Far-Flung Team Members"></figure>
+                
+                <p><span class="category"><em>culture</em></span><br>7 Ways to Engage Far-Flung Team Members</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/what-customers-need/" class="post-box">
+                
+                  <figure style="background: #f72e74"><img src="/images/blog/2016/mar/what-customers-need.png" alt="How to Determine What Your Customer Really Needs"></figure>
+                
+                <p><span class="category"><em>support</em></span><br>How to Determine What Your Customer Really Needs</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/talking-vs-listening/" class="post-box">
+                
+                  <figure style="background: #a8e141"><img src="/images/blog/2016/mar/talking-vs-listening.png" alt="Talking to Customers Won’t Teach You Anything"></figure>
+                
+                <p><span class="category"><em>growth</em></span><br>Talking to Customers Won’t Teach You Anything</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/interview-questions/" class="post-box">
+                
+                  <figure style="background: #eede39"><img src="/images/blog/2016/mar/interview-questions.png" alt="Hiring for Support? Make the Most of Your Interviews."></figure>
+                
+                <p><span class="category"><em>support</em></span><br>Hiring for Support? Make the Most of Your Interviews.</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/video-updates/" class="post-box">
+                
+                  <figure style="background: #6bdaed"><img src="/images/blog/2016/feb/video-updates.png" alt="How We Replaced Our Weekly All-Hands Meeting with Video"></figure>
+                
+                <p><span class="category"><em>culture</em></span><br>How We Replaced Our Weekly All-Hands Meeting with Video</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/support-managers/" class="post-box">
+                
+                  <figure style="background: #ae85fd"><img src="/images/blog/2016/feb/support-managers.png" alt="5 Big Lessons Support Managers Wish They’d Learned Sooner"></figure>
+                
+                <p><span class="category"><em>support</em></span><br>5 Big Lessons Support Managers Wish They’d Learned Sooner</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/bad-meetings/" class="post-box">
+                
+                  <figure style="background: #f72e74"><img src="/images/blog/2016/feb/bad-meetings.png" alt="How to Sabotage Any Meeting"></figure>
+                
+                <p><span class="category"><em>growth</em></span><br>How to Sabotage Any Meeting</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/help-scout-plus/" class="post-box">
+                
+                  <figure style="background: "><img src="/images/blog/2016/feb/help-scout-plus-thumb.png" alt="Meet the Newest Member of the Family: Help Scout Plus"></figure>
+                  
+                <p><span class="category"><em>product</em></span><br>Meet the Newest Member of the Family: Help Scout Plus</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/customer-service-performance-measurement/" class="post-box">
+                
+                  <figure style="background: #a8e141"><img src="/images/blog/2016/feb/customer-service-performance-measurement.png" alt="How Top Customer Service Teams Measure Performance"></figure>
+                
+                <p><span class="category"><em>support</em></span><br>How Top Customer Service Teams Measure Performance</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/customer-feedback/" class="post-box">
+                
+                  <figure style="background: #6bdaed"><img src="/images/blog/2016/feb/customer-feedback.png" alt="Let Support Be the Voice for Your Customers"></figure>
+                
+                <p><span class="category"><em>support</em></span><br>Let Support Be the Voice for Your Customers</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/team-building-company-retreat/" class="post-box">
+                
+                  <figure style="background: #ecdd38"><img src="/images/blog/2016/feb/team-building-company-retreat.png" alt="How to Plan Fun and Productive Company Retreats"></figure>
+                
+                <p><span class="category"><em>culture</em></span><br>How to Plan Fun and Productive Company Retreats</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/how-to-say-no/" class="post-box">
+                
+                  <figure style="background: #ad86fc"><img src="/images/blog/2016/feb/how-to-say-no.png" alt="7 Ways to Soften the ‘No'"></figure>
+                
+                <p><span class="category"><em>support</em></span><br>7 Ways to Soften the ‘No'</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/january-release-notes/" class="post-box">
+                
+                  <figure style="background: #3197d6"><img src="/images/blog/2016/feb/release-notes-2016.png" alt="Release Notes: January"></figure>
+                
+                <p><span class="category"><em>product</em></span><br>Release Notes: January</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/product-launch-content/" class="post-box">
+                
+                  <figure style="background: #a8e041"><img src="/images/blog/2016/feb/product-launch-content.png" alt="How Content Plays Nicely with Product Launches"></figure>
+                
+                <p><span class="category"><em>growth</em></span><br>How Content Plays Nicely with Product Launches</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/decision-making-process/" class="post-box">
+                
+                  <figure style="background: #6bdaed"><img src="/images/blog/2016/jan/decision-making-process.png" alt="3 Steps to Making Better Decisions"></figure>
+                
+                <p><span class="category"><em>growth</em></span><br>3 Steps to Making Better Decisions</p>
+              </a>
+            </div>
+          
+          </div>
+          <div class="tab-pane fade in" id="popular">
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/value-proposition/" class="post-box">
+                
+                  <figure style="background: #627ba7"><img src="/images/blog/2015/apr/value-proposition.png" alt="Writing Value Propositions that Work"></figure>
+                
+                <p><span class="category"><em>growth</em></span><br>Writing Value Propositions that Work</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/writing-well/" class="post-box">
+                
+                  <figure style="background: #37bba6"><img src="/images/blog/2015/apr/writing-well.png" alt="How to Write with Substance"></figure>
+                
+                <p><span class="category"><em>growth</em></span><br>How to Write with Substance</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/customer-service-phrases/" class="post-box">
+                
+                  <figure style="background: #459ee8"><img src="/images/blog/2015/mar/customer-service-phrases.png" alt="Phrases to Improve Every Support Interaction"></figure>
+                
+                <p><span class="category"><em>support</em></span><br>Phrases to Improve Every Support Interaction</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/remote-culture/" class="post-box">
+                
+                  <figure style="background: #2d3f5c"><img src="/images/blog/2015/mar/remote-culture.png" alt="What We’ve Learned Building a Remote Culture"></figure>
+                
+                <p><span class="category"><em>culture</em></span><br>What We’ve Learned Building a Remote Culture</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/customer-complaints/" class="post-box">
+                
+                  <figure style="background: #ea4a2f"><img src="/images/blog/2015/feb/upset-customers.png" alt="How to Talk to Your Angriest Customers"></figure>
+                
+                <p><span class="category"><em>support</em></span><br>How to Talk to Your Angriest Customers</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/customer-service-tips/" class="post-box">
+                
+                  <figure style="background: #2b809b"><img src="/images/blog/2015/feb/customer-service-tips.png" alt="15 Traits of Top-Tier Support Departments"></figure>
+                
+                <p><span class="category"><em>support</em></span><br>15 Traits of Top-Tier Support Departments</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/company-blog/" class="post-box">
+                
+                  <figure style="background: #2b313e"><img src="/images/blog/2015/jan/company-blog.jpg" alt="The 25 Principles that Power Our Company Blog"></figure>
+                
+                <p><span class="category"><em>growth</em></span><br>The 25 Principles that Power Our Company Blog</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/inbox-zero-customer-support/" class="post-box">
+                
+                  <figure style="background: #328ddb"><img src="/images/blog/2015/jan/empathetic-path-inbox-zero@2x.png" alt="The Empathetic Path to Inbox Zero"></figure>
+                
+                <p><span class="category"><em>support</em></span><br>The Empathetic Path to Inbox Zero</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/ogilvy-management-advice/" class="post-box">
+                
+                  <figure style="background: #000000"><img src="/images/blog/2014/oct/ogilvy-management-advice.png" alt="David Ogilvy’s Contrarian Management Advice"></figure>
+                
+                <p><span class="category"><em>culture</em></span><br>David Ogilvy’s Contrarian Management Advice</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/user-onboarding-mistakes/" class="post-box">
+                
+                  <figure style="background: #1796d9"><img src="/images/blog/2014/sep/user-onboarding-mistakes.jpg" alt="Are You Making These 5 Common User Onboarding Mistakes?"></figure>
+                
+                <p><span class="category"><em>growth</em></span><br>Are You Making These 5 Common User Onboarding Mistakes?</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/customer-service-scenarios/" class="post-box">
+                
+                  <figure style="background: #383B6E"><img src="/images/blog/customer-service-scenarios.jpg" alt="How to Handle 8 Challenging Customer Service Scenarios"></figure>
+                
+                <p><span class="category"><em>support</em></span><br>How to Handle 8 Challenging Customer Service Scenarios</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/psychology-of-color/" class="post-box">
+                
+                  <figure style="background: #a02c75"><img src="/images/blog/psychology-of-color.jpg" alt="The Psychology of Color in Marketing and Branding"></figure>
+                
+                <p><span class="category"><em>growth</em></span><br>The Psychology of Color in Marketing and Branding</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/customer-feedback/" class="post-box">
+                
+                  <figure style="background: #0b1940"><img src="/images/blog/customer-feedback.jpg" alt="The 7 Best Ways to Gather Customer Feedback"></figure>
+                
+                <p><span class="category"><em>support</em></span><br>The 7 Best Ways to Gather Customer Feedback</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/customer-service-skills/" class="post-box">
+                
+                  <figure style="background: #6098c7"><img src="/images/blog/service-skills.jpg" alt="15 Customer Service Skills that Every Employee Needs"></figure>
+                
+                <p><span class="category"><em>support</em></span><br>15 Customer Service Skills that Every Employee Needs</p>
+              </a>
+            </div>
+          
+          </div>
+          <div class="tab-pane fade" id="growth">
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/books-that-changed-us/" class="post-box">
+                
+                  <figure style="background: #6bdaed"><img src="/images/blog/2016/mar/books-that-changed-us.png" alt="9 Great Books That Changed the Way We Work"></figure>
+                
+                <p>9 Great Books That Changed the Way We Work</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/talking-vs-listening/" class="post-box">
+                
+                  <figure style="background: #a8e141"><img src="/images/blog/2016/mar/talking-vs-listening.png" alt="Talking to Customers Won’t Teach You Anything"></figure>
+                
+                <p>Talking to Customers Won’t Teach You Anything</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/bad-meetings/" class="post-box">
+                
+                  <figure style="background: #f72e74"><img src="/images/blog/2016/feb/bad-meetings.png" alt="How to Sabotage Any Meeting"></figure>
+                
+                <p>How to Sabotage Any Meeting</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/product-launch-content/" class="post-box">
+                
+                  <figure style="background: #a8e041"><img src="/images/blog/2016/feb/product-launch-content.png" alt="How Content Plays Nicely with Product Launches"></figure>
+                
+                <p>How Content Plays Nicely with Product Launches</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/decision-making-process/" class="post-box">
+                
+                  <figure style="background: #6bdaed"><img src="/images/blog/2016/jan/decision-making-process.png" alt="3 Steps to Making Better Decisions"></figure>
+                
+                <p>3 Steps to Making Better Decisions</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/visual-communication/" class="post-box">
+                
+                  <figure style="background: #eede39"><img src="/images/blog/2016/jan/visual-communication.png" alt="Why a Visual Really is Worth 1,000 Words"></figure>
+                
+                <p>Why a Visual Really is Worth 1,000 Words</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/finish-what-you-start/" class="post-box">
+                
+                  <figure style="background: #eede39"><img src="/images/blog/2016/jan/finish-what-you-start.png" alt="The Importance of Finishing What You Start"></figure>
+                
+                <p>The Importance of Finishing What You Start</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/our-best-writing/" class="post-box">
+                
+                  <figure style="background: #6bdaed"><img src="/images/blog/2015/dec/our-best-writing.png" alt="Exceptional Support and Doing Better Work: Our Best Writing from 2015"></figure>
+                
+                <p>Exceptional Support and Doing Better Work: Our Best Writing from 2015</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/goal-setting/" class="post-box">
+                
+                  <figure style="background: #f72c74"><img src="/images/blog/2015/dec/goal-setting.png" alt="The Science of Setting and Achieving Goals"></figure>
+                
+                <p>The Science of Setting and Achieving Goals</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/procrastination-habits-productivity/" class="post-box">
+                
+                  <figure style="background: #ffdf52"><img src="/images/blog/2015/dec/procrastination-habits-productivity.png" alt="Mastering the Art of ‘Just Start’"></figure>
+                
+                <p>Mastering the Art of ‘Just Start’</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/home-page-design/" class="post-box">
+                
+                  <figure style="background: #61dc64"><img src="/images/blog/2015/nov/home-page-design.png" alt="3 Stages to Better Home Pages"></figure>
+                
+                <p>3 Stages to Better Home Pages</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/psychology-schedule/" class="post-box">
+                
+                  <figure style="background: #ffdf51"><img src="/images/blog/2015/nov/psychology-schedule.png" alt="What Psychology Teaches Us About Structuring the Workday"></figure>
+                
+                <p>What Psychology Teaches Us About Structuring the Workday</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/inside-look-customer-spotlight/" class="post-box">
+                
+                  <figure style="background: #1FC0D4"><img src="/images/blog/2015/nov/inside-look-customer-spotlight.png" alt="What We Learned Telling Customers’ Stories"></figure>
+                
+                <p>What We Learned Telling Customers’ Stories</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/business-growth-unicorns/" class="post-box">
+                
+                  <figure style="background: #F8CD69"><img src="/images/blog/2015/nov/business-growth-unicorns.png" alt="Are ‘Unicorns’ Built to Last?"></figure>
+                
+                <p>Are ‘Unicorns’ Built to Last?</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/sleep-habits/" class="post-box">
+                
+                  <figure style="background: #2b1b40"><img src="/images/blog/2015/nov/sleep-habits.png" alt="Why Better Sleep Equals Better Work"></figure>
+                
+                <p>Why Better Sleep Equals Better Work</p>
+              </a>
+            </div>
+          
+          </div>
+          <div class="tab-pane fade" id="support">
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/what-customers-need/" class="post-box">
+                
+                  <figure style="background: #f72e74"><img src="/images/blog/2016/mar/what-customers-need.png" alt="How to Determine What Your Customer Really Needs"></figure>
+                
+                <p>How to Determine What Your Customer Really Needs</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/interview-questions/" class="post-box">
+                
+                  <figure style="background: #eede39"><img src="/images/blog/2016/mar/interview-questions.png" alt="Hiring for Support? Make the Most of Your Interviews."></figure>
+                
+                <p>Hiring for Support? Make the Most of Your Interviews.</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/support-managers/" class="post-box">
+                
+                  <figure style="background: #ae85fd"><img src="/images/blog/2016/feb/support-managers.png" alt="5 Big Lessons Support Managers Wish They’d Learned Sooner"></figure>
+                
+                <p>5 Big Lessons Support Managers Wish They’d Learned Sooner</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/customer-service-performance-measurement/" class="post-box">
+                
+                  <figure style="background: #a8e141"><img src="/images/blog/2016/feb/customer-service-performance-measurement.png" alt="How Top Customer Service Teams Measure Performance"></figure>
+                
+                <p>How Top Customer Service Teams Measure Performance</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/customer-feedback/" class="post-box">
+                
+                  <figure style="background: #6bdaed"><img src="/images/blog/2016/feb/customer-feedback.png" alt="Let Support Be the Voice for Your Customers"></figure>
+                
+                <p>Let Support Be the Voice for Your Customers</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/how-to-say-no/" class="post-box">
+                
+                  <figure style="background: #ad86fc"><img src="/images/blog/2016/feb/how-to-say-no.png" alt="7 Ways to Soften the ‘No'"></figure>
+                
+                <p>7 Ways to Soften the ‘No'</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/customer-satisfaction/" class="post-box">
+                
+                  <figure style="background: #6bdaed"><img src="/images/blog/2016/jan/customer-satisfaction.png" alt="Measuring Customer Satisfaction Shouldn’t Be Complicated"></figure>
+                
+                <p>Measuring Customer Satisfaction Shouldn’t Be Complicated</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/support-management/" class="post-box">
+                
+                  <figure style="background: #ad86fc"><img src="/images/blog/2016/jan/support-management.png" alt="7 Smart Ideas for Managing the Support Queue"></figure>
+                
+                <p>7 Smart Ideas for Managing the Support Queue</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/customer-service-metrics/" class="post-box">
+                
+                  <figure style="background: #6bdaed"><img src="/images/blog/2016/jan/customer-service-metrics.png" alt="Supercharge Your Support With Data-Driven Smarts"></figure>
+                
+                <p>Supercharge Your Support With Data-Driven Smarts</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/using-gifs-support/" class="post-box">
+                
+                  <figure style="background: #ad86fc"><img src="/images/blog/2015/dec/using-gifs-support.png" alt="Giving Great GIFs for Better Support"></figure>
+                
+                <p>Giving Great GIFs for Better Support</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/all-hands-support/" class="post-box">
+                
+                  <figure style="background: #f7db31"><img src="/images/blog/2015/dec/all-hands-support.png" alt="Why All Hands Support Didn’t Work for Our Company"></figure>
+                
+                <p>Why All Hands Support Didn’t Work for Our Company</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/connected-teams/" class="post-box">
+                
+                  <figure style="background: #DFE16C"><img src="/images/blog/2015/nov/connected-teams.png" alt="Support, Marketing, Community, and PR—They’re All the Same Thing"></figure>
+                
+                <p>Support, Marketing, Community, and PR—They’re All the Same Thing</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/outage-status-update/" class="post-box">
+                
+                  <figure style="background: #F8B814"><img src="/images/blog/2015/oct/outage-status-update.png" alt="How to Recover After Your Website Crashes"></figure>
+                
+                <p>How to Recover After Your Website Crashes</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/support-self-care/" class="post-box">
+                
+                  <figure style="background: #6bdaed"><img src="/images/blog/2015/sep/support-self-care.png" alt="Customer Support People Need Care, Too"></figure>
+                
+                <p>Customer Support People Need Care, Too</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/customer-success/" class="post-box">
+                
+                  <figure style="background: #56db9e"><img src="/images/blog/2015/aug/9-insights.png" alt="9 Insights on Improving Customer Success"></figure>
+                
+                <p>9 Insights on Improving Customer Success</p>
+              </a>
+            </div>
+          
+          </div>
+          <div class="tab-pane fade" id="culture">
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/isolated-teammates/" class="post-box">
+                
+                  <figure style="background: #ae85fd"><img src="/images/blog/2016/mar/isolated-teammates.png" alt="7 Ways to Engage Far-Flung Team Members"></figure>
+                
+                <p>7 Ways to Engage Far-Flung Team Members</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/video-updates/" class="post-box">
+                
+                  <figure style="background: #6bdaed"><img src="/images/blog/2016/feb/video-updates.png" alt="How We Replaced Our Weekly All-Hands Meeting with Video"></figure>
+                
+                <p>How We Replaced Our Weekly All-Hands Meeting with Video</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/team-building-company-retreat/" class="post-box">
+                
+                  <figure style="background: #ecdd38"><img src="/images/blog/2016/feb/team-building-company-retreat.png" alt="How to Plan Fun and Productive Company Retreats"></figure>
+                
+                <p>How to Plan Fun and Productive Company Retreats</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/happy-workplace/" class="post-box">
+                
+                  <figure style="background: #f72c74"><img src="/images/blog/2016/jan/happiness-at-work.png" alt="4 Surprising Predictors of Happiness in the Workplace"></figure>
+                
+                <p>4 Surprising Predictors of Happiness in the Workplace</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/hiring-top-talent/" class="post-box">
+                
+                  <figure style="background: #a8e041"><img src="/images/blog/2016/jan/hiring-top-talent.png" alt="Attracting Top Talent for Your Remote Team"></figure>
+                
+                <p>Attracting Top Talent for Your Remote Team</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/cognitive-bias-workplace/" class="post-box">
+                
+                  <figure style="background: #1fc1d5"><img src="/images/blog/2015/dec/cognitive-bias-workplace-alt.png" alt="How Bias Can Sabotage the Workplace"></figure>
+                
+                <p>How Bias Can Sabotage the Workplace</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/social-capital/" class="post-box">
+                
+                  <figure style="background: #e0e07a"><img src="/images/blog/2015/dec/social-capital.png" alt="Why Water Cooler Talk Matters More Than You Think"></figure>
+                
+                <p>Why Water Cooler Talk Matters More Than You Think</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/cultural-diversity/" class="post-box">
+                
+                  <figure style="background: #1fc0d4"><img src="/images/blog/2015/dec/cultural-diversity.png" alt="6 Perspectives on Diversity in the Workplace"></figure>
+                
+                <p>6 Perspectives on Diversity in the Workplace</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/workplace-lessons/" class="post-box">
+                
+                  <figure style="background: #AD6DFE"><img src="/images/blog/2015/oct/workplace-lessons.png" alt="Every Lesson Worth Learning is Worth Revisiting"></figure>
+                
+                <p>Every Lesson Worth Learning is Worth Revisiting</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/creative-wisdom/" class="post-box">
+                
+                  <figure style="background: #DFE072"><img src="/images/blog/2015/oct/creative-wisdom.png" alt="7 Ways to Nurture Creativity"></figure>
+                
+                <p>7 Ways to Nurture Creativity</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/business-transparency/" class="post-box">
+                
+                  <figure style="background: #606666"><img src="/images/blog/2015/oct/business-transparency.png" alt="The Power of Transparency"></figure>
+                
+                <p>The Power of Transparency</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/creative-cringe/" class="post-box">
+                
+                  <figure style="background: #fcc352"><img src="/images/blog/2015/oct/creative-cringe.png" alt="If You Aren’t Cringing, You Aren’t Improving"></figure>
+                
+                <p>If You Aren’t Cringing, You Aren’t Improving</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/employee-onboarding/" class="post-box">
+                
+                  <figure style="background: #57DC9E"><img src="/images/blog/2015/sep/employee-onboarding.png" alt="How We Stepped Up Our Employee Onboarding"></figure>
+                
+                <p>How We Stepped Up Our Employee Onboarding</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/talent-culture-hiring/" class="post-box">
+                
+                  <figure style="background: #344040"><img src="/images/blog/2015/sep/talent-culture-hiring.png" alt="9 Powerful Ideas on Hiring for Talent and Culture-Fit"></figure>
+                
+                <p>9 Powerful Ideas on Hiring for Talent and Culture-Fit</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/remote-work-experience/" class="post-box">
+                
+                  <figure style="background: #2aa2d3"><img src="/images/blog/2015/aug/pajamas.png" alt="Lessons Learned from 6 Years of Working in My Pajamas"></figure>
+                
+                <p>Lessons Learned from 6 Years of Working in My Pajamas</p>
+              </a>
+            </div>
+          
+          </div>
+          <div class="tab-pane fade" id="product">
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/help-scout-plus/" class="post-box">
+                
+                  <figure style="background: "><img src="/images/blog/2016/feb/help-scout-plus-thumb.png" alt="Meet the Newest Member of the Family: Help Scout Plus"></figure>
+                  
+                <p>Meet the Newest Member of the Family: Help Scout Plus</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/january-release-notes/" class="post-box">
+                
+                  <figure style="background: #3197d6"><img src="/images/blog/2016/feb/release-notes-2016.png" alt="Release Notes: January"></figure>
+                
+                <p>Release Notes: January</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/help-scout-iphone/" class="post-box">
+                
+                  <figure style="background: #3197D6"><img src="/images/blog/2016/jan/help-scout-iphone-thumb.png" alt="Introducing Help Scout for iPhone"></figure>
+                  
+                <p>Introducing Help Scout for iPhone</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/november-release-notes/" class="post-box">
+                
+                  <figure style="background: #2c4155"><img src="/images/blog/2015/jul/release-notes-jun15-thumb.jpg" alt="Release Notes: November"></figure>
+                  
+                <p>Release Notes: November</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/october-release-notes/" class="post-box">
+                
+                  <figure style="background: #2c4155"><img src="/images/blog/2015/sep/august-release-notes-thumb.jpg" alt="Release Notes: October"></figure>
+                  
+                <p>Release Notes: October</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/september-release-notes/" class="post-box">
+                
+                  <figure style="background: #2c4155"><img src="/images/blog/2015/jul/release-notes-jun15-thumb.jpg" alt="Release Notes: September"></figure>
+                  
+                <p>Release Notes: September</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/introducing-beacon/" class="post-box">
+                
+                  <figure style="background: #0F79CE"><img src="/images/blog/2015/sep/introducing-beacon-thumb.png" alt="Introducing Beacon"></figure>
+                  
+                <p>Introducing Beacon</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/smooch-mobile-messaging/" class="post-box">
+                
+                  <figure style="background: #3c2c4f"><img src="/images/blog/2015/sep/supportkit-mobile-messaging.gif" alt="In-app Mobile Messaging with Smooch"></figure>
+                
+                <p>In-app Mobile Messaging with Smooch</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/august-release-notes/" class="post-box">
+                
+                  <figure style="background: #2c4155"><img src="/images/blog/2015/sep/august-release-notes-thumb.jpg" alt="Release Notes: August"></figure>
+                  
+                <p>Release Notes: August</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/july-release-notes/" class="post-box">
+                
+                  <figure style="background: #47484C"><img src="/images/blog/2015/aug/release-notes-aug-thumb.png" alt="Release Notes: July"></figure>
+                  
+                <p>Release Notes: July</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/june-release-notes/" class="post-box">
+                
+                  <figure style="background: #2c4155"><img src="/images/blog/2015/jul/release-notes-jun15-thumb.jpg" alt="Release Notes: June"></figure>
+                  
+                <p>Release Notes: June</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/2014-help-scout-review/" class="post-box">
+                
+                  <figure style="background: #6c7a89"><img src="/images/blog/2014/dec/help-scout-review3.jpg" alt="Help Scout 2014 Year in Review"></figure>
+                
+                <p>Help Scout 2014 Year in Review</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/collision-detection/" class="post-box">
+                
+                  <figure style="background: #647a91"><img src="/images/blog/2014/nov/collision-detection.jpg" alt="Collision Detection Improvements"></figure>
+                
+                <p>Collision Detection Improvements</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/happiness-docs-reports/" class="post-box">
+                
+                  <figure style="background: #5e656f"><img src="/images/blog/2014/oct/happiness-docs-reports.jpg" alt="New Reports: Happiness and Docs"></figure>
+                
+                <p>New Reports: Happiness and Docs</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/design-update/" class="post-box">
+                
+                  <figure style="background: #569abf"><img src="/images/blog/2014/sep/new-helpscout-design.jpg" alt="Help Scout Design Update"></figure>
+                
+                <p>Help Scout Design Update</p>
+              </a>
+            </div>
+          
+          </div>
+          <div class="tab-pane fade" id="customers">
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/travis-ci/" class="post-box">
+                
+                  <figure style="background: #414550"><img src="/images/blog/2015/nov/travis-ci-thumb.jpg" alt="The Moment Travis CI Realized It Was Ready for a Dedicated Support Team"></figure>
+                  
+                <p><span class="vertical"><em>Online Services</em></span><br>The Moment Travis CI Realized It Was Ready for a Dedicated Support Team</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/kinhr-customer-support/" class="post-box">
+                
+                  <figure style="background: "><img src="/images/blog/2015/aug/kinhr-customer-support-thumb.jpg" alt="How KinHR Keeps Standards High and Response Times Low"></figure>
+                  
+                <p><span class="vertical"><em>Software</em></span><br>How KinHR Keeps Standards High and Response Times Low</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/donedone-customer-support/" class="post-box">
+                
+                  <figure style="background: "><img src="/images/blog/2015/aug/donedone-support-thumb.jpg" alt="How DoneDone Organizes and Records Customer Feedback"></figure>
+                  
+                <p><span class="vertical"><em>Software</em></span><br>How DoneDone Organizes and Records Customer Feedback</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/memeoirs-customer-support/" class="post-box">
+                
+                  <figure style="background: "><img src="/images/blog/2015/jul/memeoirs-customer-support-thumb.jpg" alt="How Memeoirs is Polishing Their Product with Customer Feedback"></figure>
+                  
+                <p><span class="vertical"><em>eCommerce</em></span><br>How Memeoirs is Polishing Their Product with Customer Feedback</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/YNAB-customer-support/" class="post-box">
+                
+                  <figure style="background: "><img src="/images/blog/2015/jul/YNAB-customer-support-thumb.jpg" alt="How YNAB Uses Team Learning to Deliver Fast Support"></figure>
+                  
+                <p><span class="vertical"><em>Software</em></span><br>How YNAB Uses Team Learning to Deliver Fast Support</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/missouri-star-quilt-support/" class="post-box">
+                
+                  <figure style="background: "><img src="/images/blog/2015/jul/missouri-star-support-thumb.jpg" alt="How Missouri Star Quilt Co. Is Leading a Tribe of Quilters"></figure>
+                  
+                <p><span class="vertical"><em>eCommerce</em></span><br>How Missouri Star Quilt Co. Is Leading a Tribe of Quilters</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/cater2me-support/" class="post-box">
+                
+                  <figure style="background: "><img src="/images/blog/2015/jul/cater2me-support-thumb.jpg" alt="How Cater2.me Is Connecting Teams through Curated Meals"></figure>
+                  
+                <p><span class="vertical"><em>Online Services</em></span><br>How Cater2.me Is Connecting Teams through Curated Meals</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/opensesame-customer-experience/" class="post-box">
+                
+                  <figure style="background: #444549"><img src="/images/blog/2015/jun/opensesame-thumb.jpg" alt="How OpenSesame Creates a Smooth Customer Experience"></figure>
+                  
+                <p><span class="vertical"><em>Online Services</em></span><br>How OpenSesame Creates a Smooth Customer Experience</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/tuft-and-needle-support/" class="post-box">
+                
+                  <figure style="background: "><img src="/images/blog/2015/may/tuft-and-needle-support-thumb.jpg" alt="How Tuft and Needle Invests in What Can't Be Bought"></figure>
+                  
+                <p><span class="vertical"><em>eCommerce</em></span><br>How Tuft and Needle Invests in What Can't Be Bought</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/modify-watches-customer-support/" class="post-box">
+                
+                  <figure style="background: #353b41"><img src="/images/blog/2015/may/modify-watches-customer-support-thumb.jpg" alt="How Modify Watches Wows Its Customers with Proactive Support"></figure>
+                  
+                <p><span class="vertical"><em>eCommerce</em></span><br>How Modify Watches Wows Its Customers with Proactive Support</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/customerio-support/" class="post-box">
+                
+                  <figure style="background: #353b41"><img src="/images/blog/2015/apr/customerio-support-thumb.jpg" alt="How Customer.io Built a Whole Company Support Culture"></figure>
+                  
+                <p><span class="vertical"><em>SaaS</em></span><br>How Customer.io Built a Whole Company Support Culture</p>
+              </a>
+            </div>
+          
+            <div class="col-xs-6 col-sm-4 post">
+              <a href="/blog/hipaa-compliant-help-desk/" class="post-box">
+                
+                  <figure style="background: #545F66"><img src="/images/blog/2015/mar/hipaa-compliant-help-desk-thumb.jpg" alt="How Omada Health Provides Personal Support at Scale"></figure>
+                  
+                <p><span class="vertical"><em>Services</em></span><br>How Omada Health Provides Personal Support at Scale</p>
+              </a>
+            </div>
+          
+          </div>
+        </div>
+        </div><!--/post-list-->  
+        <div class="pagination">
+          <a href="/posts/page2/" class="btn btn-default btn-sm">Older Articles</a>
+          <a href="/all-posts/" class="btn btn-default btn-sm">View All</a>
+        </div><!--/pagination-->
+      </div>
+      <section class="blog-footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="col-sm-8">
+                <i class="icon-logo"></i>
+                <p>We make <a href="/">help desk software</a> for support teams that <strong><em>insist</em></strong> on a great customer experience.</p>
+              </div>
+              <div class="col-sm-4">
+                <a href="/why-help-scout/" class="btn btn-primary">Why Help Scout?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- /blog-footer -->
+
+      <style>
+        .blog-footer { background: #354a5e url(/images/footer-pattern.png) repeat; }
+      </style>
+      <footer id="hs-footer" class="u-pad-md">
+      	<div class="container-fluid">
+      		<div class="foot-list">
+      			<h4>Product</h4>
+      			<ul class="list-unstyled">
+      				<li><a href="/help-desk/">Help Desk</a></li>
+      				<li><a href="/knowledge-base/">Knowledge Base</a></li>
+      				<li><a href="/embed-tools/">Embed Tools</a></li>
+      				<li><a href="/iphone/">iPhone App</a> <span class="badge">New</span></li>
+      				<li><a href="/all-features/">All Features</a></li>
+      				<li><a href="/pricing/">Pricing</a></li>
+      				<li><a href="/plus/">Help Scout Plus</a> <span class="badge">New</span></li>
+      			</ul>
+      		</div>
+      		<div class="foot-list">
+      			<h4>Company</h4>
+      			<ul class="list-unstyled">
+      				<li><a href="/why-help-scout/">Why Help Scout?</a></li>
+      				<li><a href="/about/">About Us</a></li>
+      				<li><a href="/careers/">Careers</a></li>
+      				<li><a href="/blog/">Blog</a></li>
+      				<li><a href="/resources/">Resources</a></li>
+      			</ul>
+      		</div>
+      		<div class="foot-list">
+      			<h4>Get Help</h4>
+      			<ul class="list-unstyled">
+      				<li><a href="/contact/">Contact</a></li>
+      				<li><a href="http://docs.helpscout.net/" target="_blank">Help Docs</a></li>
+      				<li><a href="/demo/">Get a Demo</a></li>
+      				<li><a href="http://developer.helpscout.net/" target="_blank">Developers</a></li>
+      			</ul>
+      		</div>
+      		<div class="foot-list">
+      			<h4>Compare to</h4>
+      			<ul class="list-unstyled">
+      				<li><a href="/email-management-software/">Email</a></li>
+      				<li><a href="/zendesk-alternative/">Zendesk</a></li>
+      				<li><a href="/help-desk-system/">Other Help Desks</a></li>
+      			</ul>
+      		</div>
+      		<div class="foot-list">
+      			<h4>Industries</h4>
+      			<ul class="list-unstyled">
+      				<li><a href="/vertical/software/">Software</a></li>
+      				<li><a href="/vertical/ecommerce/">eCommerce</a></li>
+      				<li><a href="/vertical/online-services/">Online Services</a></li>
+      			</ul>
+      		</div>
+      		<div class="brand">
+      			<a href="/"><svg aria-labeledby="helpscout-logo-title-1 helpscout-logo-desc-1" class="logo-svg" role="img" viewBox="0 0 229.4 42.9" xmlns="http://www.w3.org/2000/svg"><title id="helpscout-logo-title-1">Help Scout logo</title><desc id="helpscout-logo-desc-1">Help Desk software - Customer Support Software</desc><polygon fill="#FFFFFF" points="68.4,16.1 63.3,16.1 63.3,4.5 56.5,4.5 56.5,33.6 63.3,33.6 63.3,21.2 68.4,21.2 68.4,33.6 
+          75.1,33.6 75.1,4.5 68.4,4.5   "/>
+          <path fill="#FFFFFF" d="M87.1,10.5c-6.2,0-9.2,2.7-9.2,8.7v6.5c0,5.5,3.1,8.4,8.9,8.4c4.9,0,8.4-2.3,8.4-7.3v-0.5h-6.5v0.5
+          c0,2.2-0.7,2.8-2.2,2.8c-1.4,0-2.2-0.9-2.2-2.5v-3.5h10.9v-5.4C95.3,13.1,92.1,10.5,87.1,10.5z M89,19.7h-4.5V17
+          c0-1.5,0.8-2.4,2.3-2.4c1.4,0,2.2,0.9,2.2,2.4V19.7z"/>
+          <rect x="98.2" y="2.8" fill="#FFFFFF" width="6.4" height="30.8"/>
+          <path fill="#FFFFFF" d="M119.1,10.5c-2,0-3.9,0.9-5.5,2.5l-0.2-2h-6.1v32h6.4V31.6c1.6,1.8,3.1,2.6,5.1,2.6c3.9,0,5.9-2.7,5.9-7.9
+          V18C124.9,13.2,122.8,10.5,119.1,10.5z M118.5,27c0,1.9-0.7,2.8-2.2,2.8c-0.8,0-1.8-0.5-2.5-1.4V16.2c0.9-0.9,1.6-1.4,2.6-1.4
+          c1.4,0,2.1,1,2.1,2.9V27z"/>
+          <path fill="#FFFFFF" d="M140.9,11.1c0-1.5,0.7-2.4,2.4-2.4c1.7,0,2.4,1,2.4,3.3v0.8h6.3v-0.7c0-4.8-2.7-8.1-8.3-8.1
+          c-6.1,0-9.2,2.7-9.2,7.4c0,8.5,11.3,9.9,11.3,15.3c0,1.7-0.6,2.6-2.5,2.6c-2,0-2.7-1.2-2.7-3.9v-0.8H134v1.3c0,5.1,3.3,8.1,9,8.1
+          c6.7,0,9.5-2.6,9.5-7.5C152.5,17.8,140.9,15.3,140.9,11.1z"/>
+          <path fill="#FFFFFF" d="M165.9,26.8c0,1.9-0.6,2.6-2,2.6c-1.6,0-2.1-0.8-2.1-2.8v-8.8c0-1.7,0.7-2.7,2-2.7c1.5,0,2,1,2,2.7v1.3h6.2
+          v-1.9c0-4.1-3-6.7-8.1-6.7c-5.3,0-8.6,2.8-8.6,7.2v9.1c0,4.8,3.1,7.3,8.7,7.3c5.6,0,8.2-2.4,8.2-7v-1.3h-6.4V26.8z"/>
+          <path fill="#FFFFFF" d="M183.6,10.5c-4.9,0-8.9,2.4-8.9,7.7V26c0,5.7,3.3,8.1,8.7,8.1c5.4,0,8.8-2.3,8.8-8.1v-7.8
+          C192.3,12.7,188.7,10.5,183.6,10.5z M185.9,26.7c0,1.6-0.7,2.7-2.4,2.7c-1.7,0-2.4-1-2.4-2.7v-8.8c0-1.6,0.7-2.7,2.4-2.7
+          c1.7,0,2.4,1.1,2.4,2.7V26.7z"/>
+          <path fill="#FFFFFF" d="M205.8,28.2c-0.7,0.7-1.6,1.3-2.6,1.3c-1.4,0-1.8-1-1.8-2.1V10.9h-6.4v16.3c0,3.8,1.2,6.8,5.4,6.8
+          c2.2,0,4.1-1,5.6-2.5l0.2,2h5.8V10.9h-6.4V28.2z"/>
+          <path fill="#FFFFFF" d="M229.3,28.7c-0.7,0.2-1.4,0.3-2.2,0.3c-1.9,0-2.7-1.1-2.7-2.9V15.4h4.8v-4.5h-4.8V4.5l-6.4,0.9v5.4h-2.8
+          v4.5h2.8v10.9c0,5.2,2.2,7.7,7.5,7.7c1.3,0,2.6-0.2,3.8-0.5L229.3,28.7z"/>
+          <path fill="#FFFFFF" class="hs-mark" d="M39.2,26.2c0,0-0.7,0.8-1.6,1.7c2-2.5,3-5,3.5-7.4c1,0,4.2-0.2,4.2-4.2c0,0-0.3-4.2,0.2-4.8
+          c0,0-3.7,0.4-4.2,6.6c0-2.3-0.5-4.4-1.3-6.4c0.8-0.4,3.8-2.1,1.3-6.3c0,0-0.7-1.1-0.6-2c0,0-3.1,1.9-2.1,4.9c0,0,0.4,0.8,0.9,2.1
+          c-1.1-2.1-2.4-3.9-3.7-5.4c0-0.8-0.6-6.4-8.5-5c0,0,1.2,6.4,8.2,5.2c1.2,1.5,2.3,3.2,3.2,5.2c-1.2-1.9-3.6-4.7-7.1-2.5
+          c0,0,1.1,0.7,2.1,3c0,0,1,2.6,5.6,1.1c0.7,2,1.1,4.1,0.9,6.4c-0.2-1.3-1.3-5.5-5.8-3.8c0,0,0.7,1,1,2.8c0,0,0.9,3,4.5,2.8
+          c-0.5,2.1-1.4,4.4-3.1,6.6c0.7-1.8,1.3-5.3-2.9-6.6c0,0,0.3,1.1-0.5,2.4c0,0-1.9,3.1,1.6,6.3c-1.3,1.4-3,2.9-4.9,4.3
+          c1-1.3,1.9-3.7,0.3-7.1c0,0,0.1,0.9-1.4,1.4c0,0-4.8,1.5-1.8,7.7c-0.9,0.5-2.2,1.2-4.1,2c-1.9-0.7-3.2-1.4-4.1-2
+          c3-6.2-1.8-7.7-1.8-7.7c-1.5-0.5-1.4-1.4-1.4-1.4c-1.6,3.4-0.7,5.8,0.3,7.1c-2-1.4-3.6-2.9-4.9-4.3c3.4-3.2,1.6-6.3,1.6-6.3
+          c-0.8-1.3-0.5-2.4-0.5-2.4c-4.2,1.4-3.6,4.8-2.9,6.6c-1.7-2.3-2.7-4.5-3.1-6.6c3.6,0.1,4.5-2.8,4.5-2.8c0.3-1.8,1-2.8,1-2.8
+          c-4.5-1.7-5.6,2.5-5.8,3.8c-0.2-2.3,0.2-4.4,0.9-6.4c4.6,1.5,5.6-1.1,5.6-1.1c1.1-2.3,2.1-3,2.1-3c-3.5-2.2-5.9,0.6-7.1,2.5
+          c0.9-2,2.1-3.7,3.2-5.2c7,1.3,8.2-5.2,8.2-5.2c-7.8-1.4-8.4,4.1-8.5,5c-1.3,1.5-2.7,3.3-3.7,5.4c0.4-1.3,0.8-2.1,0.8-2.1
+          c1-3-2.1-4.9-2.1-4.9c0.1,0.9-0.6,2-0.6,2c-2.5,4.2,0.5,5.9,1.3,6.3c-0.8,1.9-1.3,4.1-1.3,6.3c-0.6-6.2-4.2-6.6-4.2-6.6
+          c0.5,0.6,0.2,4.8,0.2,4.8c0.1,4,3.2,4.2,4.2,4.2c0.4,2.4,1.5,4.8,3.5,7.4c-0.9-0.9-1.6-1.7-1.6-1.7c-3-3.6-6.7-3.6-6.7-3.6
+          c0.5,0.9,0.8,2.7,0.8,2.7c0.6,3,2.6,4.4,2.6,4.4c2.2,1.9,5.7,0.4,6.5,0c1.4,1.5,3.2,3,5.3,4.6C14,33.7,11,32,9.4,32.8
+          c-0.1,0-2.2,1-5,0.2c0,0,4.3,6.9,13.5,3.5c1,0.6,2.1,1.1,3.2,1.6c-2.2,0.7-5,1.4-8.5,2l1.2,0.8c1.7-0.3,5.5-0.9,9.1-2.1
+          c3.7,1.2,7.4,1.8,9.1,2.1l1.2-0.8c-3.5-0.6-6.3-1.3-8.5-2c1.1-0.4,2.2-1,3.2-1.6C37.2,40,41.5,33,41.5,33c-2.8,0.8-4.9-0.2-5-0.2
+          c-1.6-0.8-4.6,0.8-5.8,1.5c2.1-1.5,3.9-3.1,5.3-4.6c0.9,0.4,4.3,1.9,6.5,0c0,0,1.9-1.5,2.6-4.4c0,0,0.3-1.8,0.8-2.7
+          C45.9,22.6,42.2,22.6,39.2,26.2z"/>
+      </svg></a>
+      			<p class="handmade">Made by hand in 28 cities around the world</p>
+      			<ul class="list-inline list-unstyled social">
+      				<li>
+      					<a class="twitter" href="https://twitter.com/helpscout" target="_blank" title="Follow Help Scout">
+      						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-285.9 385.7 26.5 22" style="enable-background:new -285.9 385.7 26.5 22;" xml:space="preserve">
+      							<path fill="#8d98a1" d="M-269.3,386c-2.4,0.9-3.9,3.1-3.7,5.6l0.1,0.9l-1-0.1c-3.5-0.4-6.5-2-9.1-4.5l-1.3-1.3l-0.3,0.9c-0.7,2.1-0.2,4.3,1.2,5.7 c0.8,0.8,0.6,0.9-0.7,0.4c-0.5-0.2-0.9-0.3-0.9-0.2c-0.1,0.1,0.3,1.9,0.7,2.6c0.5,1,1.5,1.9,2.6,2.5l0.9,0.4l-1.1,0 c-1.1,0-1.1,0-1,0.4c0.4,1.3,1.9,2.6,3.6,3.2l1.2,0.4l-1,0.6c-1.5,0.9-3.3,1.4-5.1,1.4c-0.9,0-1.6,0.1-1.6,0.2 c0,0.2,2.3,1.3,3.7,1.7c4.1,1.3,8.9,0.7,12.6-1.4c2.6-1.5,5.2-4.6,6.4-7.5c0.7-1.6,1.3-4.4,1.3-5.8c0-0.9,0.1-1,1.1-2.1 c0.6-0.6,1.2-1.3,1.3-1.5c0.2-0.4,0.2-0.4-0.8,0c-1.6,0.6-1.9,0.5-1.1-0.4c0.6-0.6,1.3-1.7,1.3-2.1c0-0.1-0.3,0-0.6,0.2 c-0.3,0.2-1.1,0.5-1.7,0.7l-1,0.3l-0.9-0.6c-0.5-0.3-1.2-0.7-1.6-0.9C-266.9,385.6-268.4,385.7-269.3,386z"/>
+      						</svg>
+      					</a>
+      				</li>
+      				<li>
+      					<a class="linkedin" href="https://www.linkedin.com/company/help-scout" target="_blank">
+      						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-281.3 388.1 16.6 15.9" style="enable-background:new -281.3 388.1 16.6 15.9;" xml:space="preserve">
+      							<path fill="#8d98a1" d="M-264.7,403.9v-6.1c0-3.3-1.8-4.8-4.1-4.8c-1.9,0-2.7,1-3.2,1.8v-1.5h-3.6c0,1,0,10.7,0,10.7h3.6v-6 c0-0.3,0-0.6,0.1-0.9c0.3-0.6,0.8-1.3,1.8-1.3c1.3,0,1.8,1,1.8,2.4v5.7L-264.7,403.9L-264.7,403.9z M-279.3,391.8c1.2,0,2-0.8,2-1.9 c0-1-0.8-1.8-2-1.8c-1.2,0-2,0.8-2,1.8C-281.3,390.9-280.5,391.8-279.3,391.8L-279.3,391.8L-279.3,391.8z M-277.5,403.9v-10.7h-3.6 v10.7H-277.5z"/>
+      						</svg>
+      					</a>
+      				</li>
+      			</ul>
+      		</div>
+      		<ul class="list-inline list-unstyled fine-print">
+      			<li><a href="/company/security/">Security</a></li>
+      			<li><a href="/company/privacy/">Privacy</a></li>
+      			<li><a href="/company/terms-of-service/">Terms of Service</a></li>
+      			<li><small>&copy; 2016 Help Scout</small></li>
+      		</ul>
+      	</div>
+      </footer><!--feature-foot-->
+
+      <style>
+        @media (max-width: 320px) {
+          .blog-featured { background-size: 150% !important; }
+        }
+      </style>
+      <!-- Anchor tabs -->
+      <script>
+      // cache the id
+      var navbox = $('#post-tabs');
+      // activate tab on click
+      navbox.on('click', 'a', function (e) {
+        var $this = $(this);
+        // prevent the Default behavior
+        e.preventDefault();
+        // set the hash to the address bar
+        window.location.hash = $this.attr('href');
+        // activate the clicked tab
+        $this.tab('show');
+      })
+
+      // if we have a hash in the address bar
+      if(window.location.hash){
+        // show right tab on load (read hash from address bar)
+        navbox.find('a[href="'+window.location.hash+'"]').tab('show');
+      }
+      </script>
+  	
+    </section><!-- /bodyWrap -->
+    
+  	
+
+
+
+<script>
+  $(document).ready(function() {
+    $('#nl-pop').newsLetterWidget();
+  });
+</script>
+
+
+
+<script>
+  //blog search
+  $(document).ready(function(){
+    var submitIcon = $('.bl-icon-search');
+    var submitInput = $('.bl-search-input');
+    var searchBox = $('.bl-search');
+    var isOpen = false;
+    
+    $(document).mouseup(function(){
+      if(isOpen == true){
+      submitInput.val('');
+      $('.bl-search-submit').css('z-index','-999');
+      submitIcon.click();
+      }
+    });
+    submitIcon.mouseup(function(){
+      return false;
+    });
+    
+    searchBox.mouseup(function(){
+      return false;
+    });
+    submitIcon.click(function(){
+      if(isOpen == false){
+        searchBox.addClass('bl-search-open');
+        isOpen = true;
+        submitInput.focus();
+      } else {
+        searchBox.removeClass('bl-search-open');
+        isOpen = false;
+      }
+    });
+  });
+</script>
+
+
+
+<!-- all pages -->
+<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js"></script>
+<script>
+  $('[name=referrer]').val(document.referrer);
+  $('.js-newsletter').submit(function(e) {
+    $(this).find('.btn').button('loading');
+  });
+  wistiaEmbeds.onFind(function(video){
+    video.bind("play", function(){
+      mixpanel.track("Video played", {
+        "Video name": video.name()
+      });
+      return this.unbind;
+    }).bind("end", function(){
+      mixpanel.track("Video completed", {
+        "Video name": video.name()
+      });
+      return this.unbind;
+    });
+  });
+</script>
+
+<!-- Google Code for Remarketing Tag -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 971521024;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<div style="display: none">
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+</div>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/971521024/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!-- /Google Code for Remarketing Tag -->
+<!-- Twitter Remarketing Tag -->		
+<script type="text/javascript">twttr.conversion.trackPid('l5qjo', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l5qjo&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l5qjo&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+</noscript>
+<!-- /Twitter Remarketing -->
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '463946200432443');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=463946200432443&ev=PageView&noscript=1"
+/></noscript>
+<!-- /End Facebook Pixel Code -->
+	
+<!-- browser validation -->
+<!--[if lt IE 9]>
+  <script src="/js/outdatedBrowser.min.js"></script>
+  <link rel="stylesheet" href="/css/outdatedBrowser.min.css">
+  <script>
+    $( document ).ready(function() {
+      outdatedBrowser({
+        bgColor: '#23678d',
+        color: '#ffffff',
+        lowerThan: 'boxShadow'
+      })
+    })
+  </script>
+  <div id="outdated">
+     <p>Help Scout requires Internet Explorer 9 or higher to provide you with <br>a secure and speedy experience. It only takes a jiffy to upgrade. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Sure, let's do it </a></p>
+     <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+  </div>
+<![endif]-->
+	</body>
+</html>
