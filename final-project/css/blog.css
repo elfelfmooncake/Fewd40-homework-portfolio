@@ -315,7 +315,7 @@
 }
 .blog-featured .link {
     display: block;
-    padding: 2.25em 0 20em;
+    padding: 2.25em 0 1em;
     position: relative;
     text-decoration: none;
     -webkit-transition: opacity .2s ease-in-out;
@@ -347,6 +347,7 @@
     font-weight: 600;
     line-height: 1.3em;
     opacity: 1;
+    margin-bottom:0.5em;
     -webkit-transition: font-size .25s ease;
     -o-transition: font-size .25s ease;
     transition: font-size .25s ease
@@ -374,10 +375,20 @@
 .blog-featured .meta a:hover {
     color: #fff
 }
+.blog-featured-link {
+    color:#fff;
+    opacity:1;
+    text-decoration: underline;
+}
+.featured-desc {
+    color:#fff;
+    opacity:.8;
+}
 #post-nav {
     background: #eaebed;
     margin-bottom: 2em
 }
+
 #post-content a,
 #author a {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .4) 50%);
@@ -1329,7 +1340,7 @@
         font-size: 38px
     }
     .blog-featured .link {
-        padding: 3.5em 0 21em
+        padding: 3.5em 0 1em
     }
     #related-posts {
         padding: 0 2.4em

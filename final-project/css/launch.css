@@ -4761,7 +4761,10 @@ strong {
     font-weight: 600
 }
 figure img {
-    width: 100%
+    width: 80%;
+}
+figure>img {
+    margin-left:10%;
 }
 .mobile-hide {
     display: none
@@ -9370,7 +9373,7 @@ polygon {
 @media (min-width: 850px) {
     #hs-footer .brand {
         clear: none;
-        text-align: right
+        text-align: left
     }
 }
 #hs-footer .social a {
@@ -11282,7 +11285,8 @@ polygon {
 }
 .blog-footer {
     padding: 3em 0;
-    text-align: center
+    text-align: center;
+    background-color:#4e6880;
 }
 .blog-footer p,
 .blog-footer strong {
