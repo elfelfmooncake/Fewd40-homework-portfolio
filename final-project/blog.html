@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a blog is meant to be a resource for entrepreneurs, product managers, marketers and anyone who's interested in leading the growth of a business.">
     <meta name="author" content="Elva Fan">
-    
+
+    <meta name="thumbnail" content="images/facebook-profile.jpg">
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="X-FRAME-OPTIONS" content="SAMEORIGIN">
@@ -41,8 +42,7 @@
 
    <!-- loading jquery from google and the javascript file -->
     <script src="js/jquery220.min.js"></script>
-    <!-- load isotope JS library -->
-    <!-- <script src="js/isotope.pkgd.js"></script> -->
+    
     <!-- bootstrap library -->
     <script src="js/bootstrap.min.js"></script>
     <!-- my own jquery -->
@@ -60,15 +60,15 @@
             <div class="col-sm-3">
               <!-- the H1 for blog logo or title "elva's blog" -->
               <div class="hs-logo rainbow">
-                  <h1><a href="/" title="Elva's blog">Elva's Blog</a><h1>
+                  <h1><a href="#" title="Elva's blog">Elva's Blog</a><h1>
                 </div><!--/mark-->
             </div>
 
             <!-- div containing navigation bar -->
             <div class="col-sm-9">
               <ul class="nav nav-pills">
-                <li class="active"><a href="/blog/"><span class="hs">Elva's</span> Blog</a></li>
-                <li><a href="/resources/">About me</a></li>
+                <li class="active"><a href="#"><span class="hs">Elva's</span> Blog</a></li>
+                <li><a href="aboutme.html">About me</a></li>
                 <li id="nl-subscribe"><a href="#sub-form" data-toggle="modal">Subscribe</a></li>
               </ul>
             </div><!--  /div containing navigation bar -->
@@ -341,8 +341,8 @@
 
         </div><!--/post-list-->  
         <div class="pagination">
-          <a href="/posts/page2/" class="btn btn-default btn-sm">Older Articles</a>
-          <a href="/all-posts/" class="btn btn-default btn-sm">View All</a>
+          <a id='older_articles' href="#" class="btn btn-default btn-sm">Older Articles</a>
+          <a id='view_all' href="#" class="btn btn-default btn-sm">View All</a>
         </div><!--/pagination-->
       </div>
       <section class="blog-footer">
@@ -385,7 +385,7 @@
       			</ul>
       		</div>
       		<ul class="list-inline list-unstyled fine-print">
-      			<li><a href="#random">Privacy Policy</a></li>
+      			<li><a href="privacy.html">Privacy Policy</a></li>
       			<li><small>&copy; Elva Fan</small></li>
       		</ul>
       	</div>
@@ -422,7 +422,16 @@
     
   	
 
-
+<!-- <section id="nl-pop" style="display:none;">
+  <p>Join 57,284 subscribers &amp; get an article like this twice a week.</p>
+  <form action="https://secure.helpscout.net/newsletter/subscribe/" class="newsletter form-inline" id="lead-signup-popin">
+    <div class="form-group">
+      <input class="email-add form-control" type="email" autocapitalize="off" autocorrect="off" name="email" id="email-popin" placeholder="Email address">
+      <input class="btn btn-primary" type="submit" data-loading-text="Sending..." value="Sign up">
+    </div> --><!--/form-group-->
+<!--   </form>
+  <small><a class="no-thanks" href="#">No thanks</a></small>
+</section> --><!--/nl-pop-->
 
 <script>
   // $(document).ready(function() {
