@@ -52,13 +52,13 @@ $( document ).ready(function() {
 		e.preventDefault();
 		// need to figure out how to select the posts that are being displayed only
 		if(location.hash==="#most-recent"){
-			$('.post').slice(last_article+1,last_article+6).css('display','inline');
+			$('.post').slice(last_article,last_article+6).css('display','inline');
 		}
 		else if(location.hash.length){
-			$('.'+location.hash.slice(1)).slice(last_article+1,last_article+6).css('display','inline');
+			$('.'+location.hash.slice(1)).slice(last_article,last_article+6).css('display','inline');
 		}		
 		else {
-			$('.post').slice(last_article+1,last_article+6).css('display','inline');
+			$('.post').slice(last_article,last_article+6).css('display','inline');
 		}
 		console.log('current last_article='+last_article)
 		last_article = last_article + 6
